@@ -27,7 +27,7 @@ apiVersion: configsync.gke.io/v1beta1
 metadata:
   name: repo-sync
   annotations:
-    configmanagement.gke.io/namespace-selector: bookstore  # Actuate this resource in the namespaces with labels matched by the namespace selector
+    configmanagement.gke.io/namespace-selector: backend  # Actuate this resource in the namespaces with labels matched by the namespace selector
 spec:
   sourceFormat: unstructured
   git:
