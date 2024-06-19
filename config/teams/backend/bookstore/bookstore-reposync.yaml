@@ -7,9 +7,8 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    repo: https://github.com/npintaux/pe-with-gkee
+    repo: https://github.com/npintaux/pe-with-gkee-bookstore
     branch: main
-    dir: config/teams/backend/bookstore
     auth: none
 ---
 kind: RoleBinding
