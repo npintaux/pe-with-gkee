@@ -10,24 +10,24 @@ spec:
   parentRefs:
   - name: external-http
   rules:
-  - matches:
-    - path:
-        type: PathPrefix
-        value: /west
-    backendRefs:
-    - group: net.gke.io
-      kind: ServiceImport
-      name: store-west-2
-      port: 8080
-  - matches:
-    - path:
-        type: PathPrefix
-        value: /east
-    backendRefs:
-    - group: net.gke.io
-      kind: ServiceImport
-      name: store-east-1
-      port: 8080
+  # - matches:
+  #   - path:
+  #       type: PathPrefix
+  #       value: /west
+  #   backendRefs:
+  #   - group: net.gke.io
+  #     kind: ServiceImport
+  #     name: store-west-2
+  #     port: 8080
+  # - matches:
+  #   - path:
+  #       type: PathPrefix
+  #       value: /east
+  #   backendRefs:
+  #   - group: net.gke.io
+  #     kind: ServiceImport
+  #     name: store-east-1
+  #     port: 8080
   - backendRefs:
     - group: net.gke.io
       kind: ServiceImport
