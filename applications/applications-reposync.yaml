@@ -1,0 +1,28 @@
+kind: RepoSync
+apiVersion: configsync.gke.io/v1beta1
+metadata:
+  name: applications-reposync
+  annotations:
+    configmanagement.gke.io/namespace-selector: applications
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/npintaux/pe-with-gkee
+    branch: main
+    dir: applications
+    auth: none
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: be-bookstore
+  annotations:
+    configmanagement.gke.io/namespace-selector: applications
+subjects:
+- kind: ServiceAccount
+  name: ns-reconciler-applications
+  namespace: config-management-system
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
