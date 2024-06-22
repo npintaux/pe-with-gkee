@@ -4,6 +4,7 @@ metadata:
   name: public-store-route
   annotations:
     configmanagement.gke.io/namespace-selector: config-scope-selector
+    configmanagement.gke.io/config-selector: application-namespace-selector
   labels:
     gateway: external-http
 spec:
