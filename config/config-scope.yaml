@@ -7,4 +7,3 @@ spec:
   selector:
     matchLabels:
       fleet.gke.io/fleet-scope: config
-      kubernetes.io/metadata.name: store

@@ -4,7 +4,6 @@ metadata:
   name: external-http
   annotations:
     configmanagement.gke.io/namespace-selector: config-scope-selector
-    configmanagement.gke.io/config-selector: application-namespace-selector
 spec:
   gatewayClassName: gke-l7-global-external-managed
   listeners:
