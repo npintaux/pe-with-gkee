@@ -32,5 +32,5 @@ spec:
   - backendRefs:
     - group: net.gke.io
       kind: ServiceImport
-      name: store
+      name: store.store.svc.cluster.local
       port: 8080
