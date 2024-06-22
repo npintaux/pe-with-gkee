@@ -8,7 +8,8 @@ metadata:
     gateway: external-http
 spec:
   parentRefs:
-  - name: external-http
+  - kind: Gateway
+    name: external-http
   rules:
   # - matches:
   #   - path:
