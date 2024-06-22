@@ -5,7 +5,7 @@ metadata:
   annotations:
     configmanagement.gke.io/namespace-selector: config-scope-selector
 spec:
-  gatewayClassName: gke-l7-gxlb-mc
+  gatewayClassName: gke-l7-global-external-managed
   listeners:
   - name: http
     protocol: HTTP
