@@ -1,0 +1,9 @@
+kind: ResourceQuota
+apiVersion: v1
+metadata:
+  name: fe-quota
+  annotations:
+    configmanagement.gke.io/namespace-selector: frontend-scope  # Actuate this resource in the namespaces with labels matched by the namespace selector
+spec:
+  hard:
+    persistentvolumeclaims: "6"
