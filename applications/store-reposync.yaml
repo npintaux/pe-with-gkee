@@ -9,7 +9,6 @@ spec:
   git:
     repo: https://github.com/npintaux/pe-with-gkee-bookstore.git
     branch: main
-    dir: applications
     auth: none
 ---
 kind: RoleBinding
