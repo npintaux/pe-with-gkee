@@ -1,7 +1,7 @@
 apiVersion: configmanagement.gke.io/v1
 kind: NamespaceSelector
 metadata:
-  name: config-scope-selector
+  name: config-selector
 spec:
   mode: dynamic
   selector:
