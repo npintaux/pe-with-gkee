@@ -18,9 +18,9 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    repo: https://github.com/GoogleCloudPlatform/anthos-config-management-samples
+    repo: https://github.com/npintaux/pe-with-gkee
     branch: main
-    dir: fleet-tenancy/teams/backend/bookstore
+    dir: fleet/teams/backend/bookstore
     auth: none
 ---
 kind: RoleBinding
