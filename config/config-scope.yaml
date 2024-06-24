@@ -1,9 +1,0 @@
-apiVersion: configmanagement.gke.io/v1
-kind: NamespaceSelector
-metadata:
-  name: config-selector
-spec:
-  mode: dynamic
-  selector:
-    matchLabels:
-      fleet.gke.io/fleet-scope: config
