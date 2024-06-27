@@ -39,6 +39,6 @@ rules:
 - apiGroups: [""]
   resources: ["serviceaccounts"]
   verbs: ["*"]
-- apiGroups: ["*"]
+- apiGroups: ["net.gke.io"]
   resources: ["serviceexports"]
   verbs: ["*"]
