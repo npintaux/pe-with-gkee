@@ -34,10 +34,10 @@ metadata:
 rules:
 # Update 'apiGroups' and 'resources' to reference actual resources managed by 'RepoSync'.
 - apiGroups: ["apps"]
-  resources: ["deployments", "services"]
+  resources: ["deployments"]
   verbs: ["*"]
 - apiGroups: [""]
-  resources: ["serviceaccounts"]
+  resources: ["serviceaccounts", "services"]
   verbs: ["*"]
 - apiGroups: ["net.gke.io"]
   resources: ["serviceexports"]
