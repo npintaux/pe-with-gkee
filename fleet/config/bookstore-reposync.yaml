@@ -34,7 +34,7 @@ metadata:
 rules:
 # Update 'apiGroups' and 'resources' to reference actual resources managed by 'RepoSync'.
 - apiGroups: ["apps"]
-  resources: ["deployments"]
+  resources: ["deployments", "services"]
   verbs: ["*"]
 - apiGroups: [""]
   resources: ["serviceaccounts"]
