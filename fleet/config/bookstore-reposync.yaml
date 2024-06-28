@@ -1,16 +1,3 @@
-kind: RepoSync
-apiVersion: configsync.gke.io/v1beta1
-metadata:
-  name: repo-sync
-  annotations:
-    configmanagement.gke.io/namespace-selector: backend-bookstore
-spec:
-  sourceFormat: unstructured
-  git:
-    repo: https://github.com/npintaux/pe-with-gkee-bookstore
-    branch: main
-    auth: none
----
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -29,8 +16,8 @@ roleRef:
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
+  namespace: bookstore # only set this field for a 'Role'
   name: ns-reconciler-bookstore-role
-  namespace: bookstore
 rules:
 # Update 'apiGroups' and 'resources' to reference actual resources managed by 'RepoSync'.
 - apiGroups: ["apps"]
