@@ -6,4 +6,4 @@ spec:
   mode: dynamic
   selector:
     matchLabels:
-      fleet.gke.io/fleet-scope: backend-team
+      fleet.gke.io/fleet-scope: backend
