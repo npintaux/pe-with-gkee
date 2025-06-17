@@ -6,5 +6,5 @@ spec:
   mode: dynamic
   selector:
     matchLabels:
-      fleet.gke.io/fleet-scope: backend
+      fleet.gke.io/fleet-scope: backend-team
       kubernetes.io/metadata.name: bookstore
